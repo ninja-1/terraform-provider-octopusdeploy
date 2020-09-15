@@ -1,4 +1,4 @@
-module github.com/OctopusDeploy/terraform-provider-octopusdeploy
+module github.com/ninja-1/terraform-provider-octopusdeploy
 
 require (
 	github.com/OctopusDeploy/go-octopusdeploy v1.6.1-0.20200819144815-f94b77aa996d
