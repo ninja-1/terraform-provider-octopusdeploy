@@ -2,9 +2,10 @@ package octopusdeploy
 
 import (
 	"fmt"
+	"log"
+
 	"github.com/OctopusDeploy/go-octopusdeploy/octopusdeploy"
 	"github.com/hashicorp/terraform/helper/schema"
-	"log"
 )
 
 func dataLibraryVariableSet() *schema.Resource {
@@ -40,6 +41,6 @@ func dataLibraryVariableSetReadByName(d *schema.ResourceData, m interface{}) err
 	log.Printf("[DEBUG] libraryVariableSet: %v", m)
 	d.Set("name", libraryVariableSet.Name)
 	d.Set("description", libraryVariableSet.Description)
-	d.Set("variable_set_id", libraryVariableSet.VariableSetId)
+	d.Set("variable_set_id", libraryVariableSet.VariableSetID)
 	return nil
 }
